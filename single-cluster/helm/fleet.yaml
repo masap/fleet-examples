@@ -32,4 +32,4 @@ helm:
   #  replicas: 2
 
   valuesFiles:
-    - values.yaml
+    - values_temp.yaml
