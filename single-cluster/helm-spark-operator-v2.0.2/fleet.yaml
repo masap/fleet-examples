@@ -1,0 +1,7 @@
+---
+# https://github.com/rancher/fleet-examples/blob/master/single-cluster/helm/fleet.yaml
+defaultNamespace: spark-operator
+helm:
+  releaseName: spark-operator
+  repo: ""
+  version: ""
