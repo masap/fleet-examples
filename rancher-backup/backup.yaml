@@ -1,0 +1,18 @@
+apiVersion: resources.cattle.io/v1
+kind: Backup
+metadata:
+  name: backup-test
+spec:
+  encryptionConfigSecretName: ""
+  resourceSetName: rancher-resource-set-basic
+  retentionCount: 10
+  schedule: '*/10 * * * *'
+  storageLocation:
+    s3:
+      bucketName: rancher2022
+      credentialSecretName: aws-cred-homma
+      credentialSecretNamespace: default
+      endpoint: s3.amazonaws.com
+      folder: "202208"
+      insecureTLSSkipVerify: true
+      region: ap-northeast-1
