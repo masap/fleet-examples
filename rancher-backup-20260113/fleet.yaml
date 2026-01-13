@@ -1,0 +1,8 @@
+defaultNamespace: 'rancher-config'
+
+helm:
+  releaseName: rancher-config
+  chart: ./chart
+  repo: ''
+  version: ''
+  valuesFiles: []
